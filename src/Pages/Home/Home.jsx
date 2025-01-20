@@ -5,7 +5,7 @@ const Home = () => {
     <div className="home">
       <div className="hero">
         <h1>
-          Largest <br /> Cyrpto Marketplace
+          Largest <br /> Crypto Marketplace
         </h1>
         <p>
           Welcome to the largest cryptoCurrency marketplace. Sign up to explore

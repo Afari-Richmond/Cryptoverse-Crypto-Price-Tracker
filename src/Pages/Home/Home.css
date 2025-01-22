@@ -69,3 +69,29 @@
 .marketCap{
     text-align: right;
 }
+.table-layout:last-child{
+  border: none;
+
+}
+
+.table-layout div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.table-layout img{
+  width: 35px;
+}
+
+.table-layout .positive{
+  color: #00d515;
+  text-align: center;
+
+}
+.table-layout .negative{
+  color: #ff4646;
+  text-align: center;
+
+}

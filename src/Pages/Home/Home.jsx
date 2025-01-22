@@ -37,9 +37,27 @@ const Home = () => {
         </div>
         {displayCoin.slice(0, 10).map((item, index) => {
           return (
-            <div className="table-layout" key={index}>
-              <p>{item.market_cap_rank}</p>
-            </div>
+            <>
+              <div className="table-layout" key={index}>
+                <p>{item.market_cap_rank}</p>
+
+                <div>
+                  <img src={item.image} alt="" />
+                  <p>{item.name + " - " + item.symbol}</p>
+                </div>
+
+                <p>
+                  {currency.symbol} {item.current_price.toLocaleString()}
+                </p>
+                <p className= {item.market_cap_change_percentage_24h > 0 ? "positive" : "negative"}>
+                  {Math.floor(item.market_cap_change_percentage_24h * 100) /
+                    100}
+                </p>
+                <p className="marketCap">
+                  {currency.symbol} {item.market_cap.toLocaleString()}
+                </p>
+              </div>
+            </>
           );
         })}
       </div>

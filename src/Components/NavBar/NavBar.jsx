@@ -37,10 +37,7 @@ const NavBar = () => {
           name: "usd",
           symbol: "$",
         });
-
     }
-
-    
   };
 
   return (

@@ -27,18 +27,19 @@ const Coin = () => {
     fetchCoinData();
   }, [currency]);
 
-  if(coinData) {
+  if (coinData) {
     return (
-
       <div className="coin">
-  
         <div className="coin-name">
           <img src={coinData.image.large} alt="" />
-          <p><b>{coinData.name} ({coinData.symbol.toUpperCase()})</b></p>
+          <p>
+            <b>
+              {coinData.name} ({coinData.symbol.toUpperCase()})
+            </b>
+          </p>
         </div>
       </div>
     );
-
   } else {
     return (
       <div className="spinner">
@@ -47,8 +48,6 @@ const Coin = () => {
       </div>
     );
   }
-
-
 };
 
 export default Coin;
